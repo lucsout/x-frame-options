@@ -48,7 +48,7 @@ app.get('/', (req, res) => {
                             console.log(`Using '${protoHost}' as base for new requests.`);
                         }
                     }
-                    return ` ${p1}="${req.protocol}://${req.hostname}:${port}?url=${newUrl}"`;
+                    return ` ${p1}="https://${req.hostname}:${port}?url=${newUrl}"`;
                 });
             }
             res.type(urlMime);
